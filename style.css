@@ -1,0 +1,228 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+#title {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2rem;
+    width: 1100px;
+    text-align: left;
+    color: #341616;
+    top: 143px;
+}
+
+#navbar img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+#top {
+    color: rgb(47, 29, 63);
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#top1 {
+    text-align: center;
+    color: black;
+    font-size: 21px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    height: 14vh;
+    width: 100vw;
+    font-family: 'Inter';
+    font-style: normal;
+    margin-top: 10px;
+    border: 2px solid black;
+
+
+}
+
+#navcontent {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+ul li a {
+    padding: 1px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: yellow;
+    color: black;
+}
+
+ul li a:hover {
+    background-color: red;
+    border-radius: 10px;
+}
+
+#container1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 63vh;
+}
+
+#container1::before {
+    content: '';
+    background: url("theme.jpg") no-repeat center center/cover;
+    width: 100vw;
+    height: 70vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.89;
+    z-index: -1;
+
+
+}
+
+.btn {
+    margin-top: 15px;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+#container2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 41px;
+}
+
+#row1 {
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background: url('flowerjeans.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+
+}
+
+#row2 {
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background: url('longsleeve.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+
+#row3 {
+    width: 30vw;
+    height: 360px;
+    border: 2px solid black;
+    background: url('skirt.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width:1131px) {
+    #row1 {
+        width: 42vw;
+    }
+
+    #row2 {
+        width: 45vw;
+    }
+
+    #row3 {
+        margin-top: 20px;
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:781px) {
+    #row1 {
+        width: 84vw;
+        margin: auto;
+        margin-left: 22px;
+    }
+
+    #row2 {
+
+        width: 84vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 22px;
+    }
+
+    #row3 {
+        width: 84vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 22px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #row1 {
+        width: 78vw;
+        margin: auto;
+        margin-left: 3px;
+    }
+
+    #row2 {
+
+        width: 78vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+
+    #row3 {
+        width: 78vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+}
+
+@media only screen and (min-height:1000px) {
+    #navbar {
+        height: 10vh;
+    }
+
+    #container1 {
+        height: 44vh
+    }
+}
